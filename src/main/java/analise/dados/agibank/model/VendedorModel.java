@@ -5,12 +5,16 @@ import lombok.Setter;
 
 public class VendedorModel {
 
-    @Getter @Setter
+    @Getter
+    @Setter
     private Integer id;
-    @Getter @Setter
+    @Getter
+    @Setter
     private Long cpf;
-    @Getter @Setter
+    @Getter
+    @Setter
     private String nome;
-    @Getter @Setter
+    @Getter
+    @Setter
     private double salario;
 }

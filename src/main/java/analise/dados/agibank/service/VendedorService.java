@@ -1,8 +1,8 @@
 package analise.dados.agibank.service;
 
-import analise.dados.agibank.arquivo.Separador;
-import analise.dados.agibank.model.VendedorModel;
 import analise.dados.agibank.conteudo.ConteudoEntrada;
+import analise.dados.agibank.diretorio.Separador;
+import analise.dados.agibank.model.VendedorModel;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,7 +12,9 @@ public class VendedorService extends Separador {
 
     public void separarLinha(String linha, ConteudoEntrada conteudoEntrada) {
         List<String> atributos = separaOsDadosDaLinha(linha);
-        salvaVendedorNaLista(conteudoEntrada, atributos);
+        if (verificaConteudo(atributos)) {
+            salvaVendedorNaLista(conteudoEntrada, atributos);
+        }
     }
 
     private void salvaVendedorNaLista(ConteudoEntrada conteudoEntrada, List<String> atributos) {

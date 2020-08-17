@@ -39,10 +39,10 @@ public class ConteudoEntrada {
     public String getNomePiorVendedor() {
         double menorSalario = MAX_VALUE;
         String nomeVendedor = "";
-        for (VendedorModel listaVendedore : listaVendedores) {
-            if (listaVendedore.getSalario() < menorSalario) {
-                menorSalario = listaVendedore.getSalario();
-                nomeVendedor = listaVendedore.getNome();
+        for (VendedorModel listaVendedor : listaVendedores) {
+            if (listaVendedor.getSalario() < menorSalario) {
+                menorSalario = listaVendedor.getSalario();
+                nomeVendedor = listaVendedor.getNome();
             }
         }
         return nomeVendedor;

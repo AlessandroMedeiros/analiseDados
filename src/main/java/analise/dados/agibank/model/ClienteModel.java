@@ -6,12 +6,16 @@ import lombok.Setter;
 
 public class ClienteModel {
 
-    @Getter @Setter
+    @Getter
+    @Setter
     private Integer id;
-    @Getter @Setter
+    @Getter
+    @Setter
     private Long cnpj;
-    @Getter @Setter
+    @Getter
+    @Setter
     private String nome;
-    @Getter @Setter
+    @Getter
+    @Setter
     private String areaDeNegocio;
 }

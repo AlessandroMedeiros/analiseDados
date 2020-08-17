@@ -7,13 +7,17 @@ import java.util.Arrays;
 
 public class VendaModel {
 
-    @Getter @Setter
+    @Getter
+    @Setter
     private Integer id;
-    @Getter @Setter
+    @Getter
+    @Setter
     private Integer idVenda;
-    @Getter @Setter
+    @Getter
+    @Setter
     private String nome;
-    @Getter @Setter
+    @Getter
+    @Setter
     private double venda;
 
     public double getVendaMaisCara(String linha) {
