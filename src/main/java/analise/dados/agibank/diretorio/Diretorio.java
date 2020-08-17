@@ -5,12 +5,12 @@ import java.util.logging.Logger;
 
 public class Diretorio {
 
-    private static final String caminhoEntrada = System.getProperty("user.home") + "\\data\\in";
-    private static final String caminhoSaida = System.getProperty("user.home") + "\\data\\out\\";
+    private static final String caminhoEntrada = System.getProperty("user.home") + "/data/in";
+    private static final String caminhoSaida = System.getProperty("user.home") + "/data/out/";
 
     public static void inicializaDiretorio() {
         Logger logger = Logger.getLogger("Diretório");
-        logger.info("Criando diretório em " + caminhoEntrada + "\\data ...");
+        logger.info("Criando diretório em " + caminhoEntrada + "/data ...");
         criaPasta(caminhoEntrada);
         criaPasta(caminhoSaida);
         logger.info("Diretório criado com sucesso!");
